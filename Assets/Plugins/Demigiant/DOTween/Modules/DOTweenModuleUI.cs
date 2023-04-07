@@ -473,6 +473,13 @@ namespace DG.Tweening
             t.SetOptions(snapping).SetTarget(target);
             return t;
         }
+        
+        public static TweenerCore<float, float, FloatOptions> DOOrthoSize(this Camera target, float endValue, float duration, bool snapping = false)
+        {
+            TweenerCore<float, float, FloatOptions> t = DOTween.To(() => target.orthographicSize, x => target.orthographicSize = x, endValue, duration);
+            t.SetOptions(snapping).SetTarget(target);
+            return t;
+        }
 
         #endregion
 

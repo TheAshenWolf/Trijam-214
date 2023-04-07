@@ -6,6 +6,7 @@ using System;
 using UnityEngine;
 using DG.Tweening.Core;
 using DG.Tweening.Plugins.Options;
+using TMPro;
 
 #pragma warning disable 1591
 namespace DG.Tweening
@@ -20,6 +21,13 @@ namespace DG.Tweening
         /// Also stores the spriteRenderer as the tween's target so it can be used for filtered operations</summary>
         /// <param name="endValue">The end value to reach</param><param name="duration">The duration of the tween</param>
         public static TweenerCore<Color, Color, ColorOptions> DOColor(this SpriteRenderer target, Color endValue, float duration)
+        {
+            TweenerCore<Color, Color, ColorOptions> t = DOTween.To(() => target.color, x => target.color = x, endValue, duration);
+            t.SetTarget(target);
+            return t;
+        }
+        
+        public static TweenerCore<Color, Color, ColorOptions> DOColor(this TextMeshProUGUI target, Color endValue, float duration)
         {
             TweenerCore<Color, Color, ColorOptions> t = DOTween.To(() => target.color, x => target.color = x, endValue, duration);
             t.SetTarget(target);
