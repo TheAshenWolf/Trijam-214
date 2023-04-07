@@ -1,0 +1,7 @@
+[submodule "Assets/Plugins/Wolfpack"]
+	path = Assets/Plugins/Wolfpack
+	url = https://github.com/TheAshenWolf/Wolfpack-Editor.git
+[submodule "Assets/Plugins/TheAshenWolfLib"]
+	path = Assets/Plugins/TheAshenWolfLib
+	url = https://github.com/TheAshenWolf/TheAshenWolfLib.git
+	branch = development
