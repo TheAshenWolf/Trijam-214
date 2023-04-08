@@ -2,6 +2,7 @@
 
 https://itch.io/jam/trijam-214
 
-Game description:
+The goal was to make a game in three hours. I was nowhere near three hours. But hey, its still some experience.
 
-Elapsed time:
+Here is the game:
+https://theashenwolf.itch.io/yoink-the-gem
