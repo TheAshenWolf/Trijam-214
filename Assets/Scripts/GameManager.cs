@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     else Destroy(gameObject);
     
     DontDestroyOnLoad(gameObject);
+
+    SceneManager.LoadScene(1, LoadSceneMode.Additive);
   }
 
   public void Update()
